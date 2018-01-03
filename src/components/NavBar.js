@@ -1,12 +1,12 @@
-import React, { Component } from "react";
+import React from "react";
 
-const NavBar = () => {
+const NavBar = (props) => {
 	return (
 		<div className="navbar-fixed">
 			<nav>
 				<div className="nav-wrapper">
 					<a href="#!" class="brand-logo">
-						Logo
+						Parkway Politics
 					</a>
 					<ul class="right hide-on-med-and-down">
 						<li>
