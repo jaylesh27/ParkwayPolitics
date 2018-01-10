@@ -4,7 +4,8 @@ var path = require("path");
 // This webpack plugin creates an index.html file (based off the template specified in our app directory) with script tags for the bundled JS files and will get outputted in the build directory.
 var HtmlWebpackPlugin = require("html-webpack-plugin");
 
-const VENDOR_LIBS = ["axios", "body-parser", "express", "react", "react-dom"];
+// VENDOR_LIBS will contain an array of strings with each item in the array being the name of the 3rd party library we want to include in the separate vendor file
+const VENDOR_LIBS = ["axios", "body-parser", "express", "react", "react-dom", "react-router-dom"];
 
 module.exports = {
 	entry: {
@@ -20,14 +21,17 @@ module.exports = {
 	module: {
 		rules: [
 			{
-				use: "babel-loader",
 				test: /\.js$/,
-				exclude: /node_modules/
+				exclude: /node_modules/,
+				use: "babel-loader"
+			},
+			{
+				test: /\.css$/,
+				use: [
+					{ loader: "style-loader" },
+					{ loader: "css-loader" }
+				]
 			}
-			// {
-			// 	use: ["style-loader", "css-loader"],
-			// 	test: /\.css$/
-			// }
 		]
 	},
 

@@ -1,14 +1,14 @@
 import React from "react";
 
-const NavBar = (props) => {
+const NavBar = () => {
 	return (
 		<div className="navbar-fixed">
 			<nav>
 				<div className="nav-wrapper">
-					<a href="#!" class="brand-logo">
+					<a href="#!" className="brand-logo">
 						Parkway Politics
 					</a>
-					<ul class="right hide-on-med-and-down">
+					<ul className="right hide-on-med-and-down">
 						<li>
 							<a href="sass.html">Sass</a>
 						</li>

@@ -1,14 +1,21 @@
-import React, { Component } from 'react';
-
-import NavBar from './NavBar';
+import React, { Component } from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import LandingPage from './LandingPage';
+import PodcastList from './PodcastList';
+import PodcastDetail from './PodcastDetail';
+import AboutUs from './AboutUs';
 
 export default class App extends Component {
 	render() {
-		return(
-			<div>
-			<NavBar />
-				<h1 className="center-align">Hello New Jersey</h1>
-			</div>
+		return (
+			<BrowserRouter>
+				<div>
+					<Route path='/episodes/:id' component={PodcastDetail}/>
+					<Route path='/episodes' component={PodcastList} />
+					<Route path='/about-us' component={AboutUs} />
+					<Route path='/' component={LandingPage} />
+				</div>
+			</BrowserRouter>
 		);
 	}
 }
