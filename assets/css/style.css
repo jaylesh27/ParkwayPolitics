@@ -1,3 +1,42 @@
+* {
+	box-sizing: border-box;
+}
+
 .nav-wrapper {
 	background-color: blue;
+}
+
+#hero-section {
+	background-image: url("https://static.pexels.com/photos/245584/pexels-photo-245584.jpeg");
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+	top: 0;
+	bottom: 0;
+	/*sets height of container to 75%*/
+	height: 75vh;
+}
+
+#hero-overlay {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	/*0.3 means changing the opacity of the overlay, the other three zeroes indicate the color black*/
+	background-color: rgba(0,0,0,0.3);
+}
+
+#intro-section {
+	color: white;
+	position: relative;
+	z-index: 10;
+	text-align: center;
+	vertical-align: middle;
+
+}
+
+#intro-section img {
+	width: 200px;
+	height: 200px;
+	border-radius: 60%;
 }
