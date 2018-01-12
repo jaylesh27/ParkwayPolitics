@@ -7,14 +7,14 @@
 }
 
 #hero-section {
-	background-image: url("https://static.pexels.com/photos/245584/pexels-photo-245584.jpeg");
+	background-image: url("../images/NJ_State_House.jpg");
 	background-size: cover;
 	background-position: center center;
 	position: relative;
 	top: 0;
 	bottom: 0;
-	/*sets height of container to 75%*/
-	height: 75vh;
+	/*sets height of container to 80% of viewport*/
+	height: 80vh;
 }
 
 #hero-overlay {
@@ -23,7 +23,7 @@
 	height: 100%;
 	width: 100%;
 	/*0.3 means changing the opacity of the overlay, the other three zeroes indicate the color black*/
-	background-color: rgba(0,0,0,0.3);
+	background-color: rgba(0,0,0,0.4);
 }
 
 #intro-section {
@@ -39,4 +39,15 @@
 	width: 200px;
 	height: 200px;
 	border-radius: 60%;
+}
+
+
+nav.bm-item-list img {
+	width: 50px;
+	height: 50px;
+}
+
+#intro-section h4 {
+	margin-left: 10px;
+	margin-right: 10px;
 }
