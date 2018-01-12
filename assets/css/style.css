@@ -13,16 +13,16 @@
 	position: relative;
 	top: 0;
 	bottom: 0;
-	/*sets height of container to 80% of viewport*/
-	height: 80vh;
+	height: 100vh;
 }
 
 #hero-overlay {
 	position: absolute;
 	top: 0;
+	bottom: 0;
 	height: 100%;
 	width: 100%;
-	/*0.3 means changing the opacity of the overlay, the other three zeroes indicate the color black*/
+	/*0.4 means changing the opacity of the overlay, the other three zeroes indicate the color black*/
 	background-color: rgba(0,0,0,0.4);
 }
 
@@ -32,22 +32,23 @@
 	z-index: 10;
 	text-align: center;
 	vertical-align: middle;
-
+	top: 10%;
 }
 
 #intro-section img {
 	width: 200px;
 	height: 200px;
 	border-radius: 60%;
+	margin-right: 15px;
 }
 
 
-nav.bm-item-list img {
+#social-media-links img {
 	width: 50px;
 	height: 50px;
 }
 
 #intro-section h4 {
-	margin-left: 10px;
-	margin-right: 10px;
+	/*margin-left: 10px;
+	margin-right: 10px;*/
 }
