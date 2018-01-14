@@ -52,3 +52,31 @@
 	/*margin-left: 10px;
 	margin-right: 10px;*/
 }
+
+div.row.podcast-info {
+	background-color: #EEEEEE;
+	margin-bottom: 0px !important;
+}
+
+#fake-news-blurb, #latest-episode {
+	padding: 30px 60px 0px 60px;
+}
+
+/*#fake-news-blurb:hover, #latest-episode:hover {
+	color: purple;
+}*/
+
+#latest-episode {
+	padding-bottom: 30px;
+}
+
+div.row.about-us-section {
+	background-color: #000000;
+	color: #FFFFFF;
+	margin-bottom: 0px !important;
+}
+
+.about-us-section h3 {
+	padding-top: 20px;
+	margin-top: 0px !important;
+}
