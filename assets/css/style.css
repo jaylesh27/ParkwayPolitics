@@ -1,5 +1,6 @@
 * {
 	box-sizing: border-box;
+	font-family: 'Roboto Slab', serif;
 }
 
 .nav-wrapper {
@@ -62,6 +63,14 @@ div.row.podcast-info {
 	padding: 30px 60px 0px 60px;
 }
 
+#fake-news-blurb h3 {
+	margin-top: 0px !important;
+}
+
+#latest-episode h3 {
+	margin-top: 0px !important;
+}
+
 /*#fake-news-blurb:hover, #latest-episode:hover {
 	color: purple;
 }*/
@@ -71,12 +80,48 @@ div.row.podcast-info {
 }
 
 div.row.about-us-section {
+	/*background-color: #3D3F40;*/
 	background-color: #000000;
 	color: #FFFFFF;
 	margin-bottom: 0px !important;
+	padding-left: 60px;
+	padding-right: 60px;
 }
 
 .about-us-section h3 {
 	padding-top: 20px;
 	margin-top: 0px !important;
+}
+
+#about-ron, #about-jay {
+
+}
+
+/*#about-ron img {
+	float: left;
+	margin-left: 30px;
+	margin-right: 60px;
+	width: 175px;
+	height: 200px;
+}
+
+#about-jay img {
+	float: left;
+	margin-left: 30px;
+	margin-right: 60px;
+	width: 175px;
+	height: 200px;
+}*/
+
+img.circle.responsive-img {
+	float: left;
+	margin-left: 30px;
+	margin-right: 60px;
+	width: 175px;
+	height: 200px;
+}
+
+a#personal-twitter-link img {
+	width: 50px;
+	height: 50px;
 }
