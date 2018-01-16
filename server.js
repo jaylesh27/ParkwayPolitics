@@ -10,7 +10,7 @@ if (process.env.NODE_ENV !== "production") {
 	app.use(webpackMiddleware(webpack(webpackConfig)));
 	console.log("running webpack development server");
 } else {
-	app.use(express.static("dist"));
+	app.use(express.static("build"));
 }
 
 app.listen(process.env.PORT || 3000, () => console.log("listening on port"));
