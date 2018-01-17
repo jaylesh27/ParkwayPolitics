@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import ron from '../../assets/images/ron-patel.jpg';
 import jay from '../../assets/images/jay-patel.jpg';
@@ -40,6 +40,6 @@ const AboutUs = () => {
 
 		</div>
 	);
-}
+};
 
 export default AboutUs;
