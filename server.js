@@ -1,7 +1,26 @@
-const express = require("express");
-const path = require("path");
+var express = require("express");
+var path = require("path");
+var cheerio = require('cheerio');
+var request=require('request');
 
 const app = express();
+
+function scrapeNjDotCom() {
+	request('http://www.nj.com/', function(error, response, html) {
+		var $ = cheerio.load(html);
+		var results = [];
+
+		$('div#river-container').each(function(i, element) {
+			var title = $(element).find('ul').children('li')
+		});
+	});
+}
+
+
+app.get('/fetch-news', function(req, res) {
+
+});
+
 
 if (process.env.NODE_ENV !== "production") {
 	const webpackMiddleware = require("webpack-dev-middleware");

@@ -12,7 +12,7 @@ const AboutUs = () => {
 			<div className="divider"></div>
 			<div className="row valign-wrapper" id="about-ron">
 				<div className="col s12 m8 offset-m2 l6 offset-l3">
-					<h4 className="center-align">Ronak (Ron) Patel</h4>
+					<h4 className="center-align">Ron Patel</h4>
 					<img src={ron} alt="ron patel pic" className="circle responsive-img" />
 					<p>Ron is passionate about both economics and politics and because he enjoys making his own life difficult he picked those two very divisive topics in America today as his major/minor at Rutgers University where he is currently attending.  In an effort to be a more engaged citizen, he has been volunteering and being active and woke and all that good stuff.  Since his co-host Jay is making this website, Jay has taken the liberty to edit everything Ron said he wanted to include in his little blurb on the site.  To be frank, the original blurb he sent kinda sucked and was a bit preachy and self-aggrandizing.
 					</p>

@@ -5,7 +5,7 @@ var path = require("path");
 var HtmlWebpackPlugin = require("html-webpack-plugin");
 
 // VENDOR_LIBS will contain an array of strings with each item in the array being the name of the 3rd party library we want to include in the separate vendor file
-const VENDOR_LIBS = ["axios", "body-parser", "express", "react", "react-dom"];
+const VENDOR_LIBS = ["axios", "body-parser", "express", "react", "react-dom", "axios", "cheerio"];
 
 module.exports = {
 	entry: {
