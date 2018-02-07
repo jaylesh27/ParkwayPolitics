@@ -17,8 +17,6 @@ class TrendingNews extends Component {
         
     }
 
-
-
     render() {
         return(
             <div>
