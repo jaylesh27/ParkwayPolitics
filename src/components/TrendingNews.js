@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import React, { Component } from 'react';
 import axios from 'axios';
 
 class TrendingNews extends Component {
@@ -7,20 +7,27 @@ class TrendingNews extends Component {
         super(props);
 
         this.state = { news: [] }
+
+        this.fetchNews = this.fetchNews.bind(this);
     }
 
     fetchNews() {
-
+        axios({
+            url: "/fetch-news",
+            method: "GET"
+        }).then((resp) => {
+            console.log(resp);
+        });
     }
 
     componentDidMount() {
-        
+        // fetchNews();
     }
 
     render() {
         return(
             <div>
-                
+                <h1>nj.com news articles</h1>
             </div>
         );
     }

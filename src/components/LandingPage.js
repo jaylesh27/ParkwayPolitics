@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import AboutUs from './AboutUs';
+import TrendingNews from './TrendingNews';
 import logo from '../../assets/images/parkway-politics-logo.jpg';
 import soundcloud_icon from '../../assets/images/soundcloud-icon.png';
 import twitter_icon from '../../assets/images/twitter-icon.png';
@@ -36,6 +37,7 @@ export default class LandingPage extends Component {
 					</div>
 				</div>
 				<AboutUs />
+				<TrendingNews />
 			</div>
 		);
 	}

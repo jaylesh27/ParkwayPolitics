@@ -1,26 +1,39 @@
 var express = require("express");
 var path = require("path");
 var cheerio = require('cheerio');
-// var request = require('request');
+var request = require('request');
 
 const app = express();
 
-// function scrapeNjDotCom() {
-// 	request('http://www.nj.com/', function(error, response, html) {
-// 		var $ = cheerio.load(html);
-// 		var results = [];
+app.get('/fetch-news', function(req, res) {
 
-// 		$('div#river-container').each(function(i, element) {
-// 			var title = $(element).find('ul').children('li')
-// 		});
-// 	});
-// }
+	request('http://www.nj.com/politics', function(error, response, html) {
 
+		if(html) {
+			var $ = cheerio.load(html);
+			console.log("html loaded into cheerio successfully");
+			var results = [];
 
-// app.get('/fetch-news', function(req, res) {
-// 	scrapeNjDotCom();
-// 	res.send(results);
-// });
+			$('div#river-container ul').each(function(i, element) {
+				var articleLink = $(element).find('li').find('article').find("div.item-text").find("h2.h2.fullheadline").find("a").attr("href");
+				// var test = $(element).find('li');
+				results.push({ link: articleLink});
+			});
+
+			// console.log(results);
+			if(results) {
+				res.send(results);
+			}else {
+				console.log("loading results");
+			}
+
+		}else {
+			console.log("no html loaded into cheerio yet");
+			res.redirect('/fetch-news');
+		}
+		
+	});
+});
 
 
 if (process.env.NODE_ENV !== "production") {
