@@ -23,9 +23,10 @@ app.get('/fetch-news', function(req, res) {
 			var articleHeadline = $(element).find('div.item-text').find('h2.h2.fullheadline').find('a').text();
 			var trimmedHeadline = articleHeadline.replace("\n                        ", "");
 			var finalHeadline = trimmedHeadline.replace('\n                    ', "");
-			results.push({ link: articleLink, image: articleImgLink, headline: finalHeadline });
+			var articleId = $(element).parent().attr('data-resource-id');
+			results.push({ link: articleLink, image: articleImgLink, headline: finalHeadline, id: articleId });
 		});
-
+		// console.log(results);
 		res.json(results);
 		
 	});

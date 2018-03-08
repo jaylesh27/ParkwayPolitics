@@ -31,14 +31,15 @@ class TrendingNews extends Component {
 
     componentDidMount() {
         this.fetchNews();
+
     }
 
     render() {
         console.log("data from TrendingNews component state");
         console.log(this.state.newsNJ);
         return(
-            <div>
-                <h1>nj.com news articles</h1>
+            <div className="container">
+                <h4 className="center-align">Check out stories from nj.com. Support local journalism!</h4>
                 <div className="row nj-news-articles">
                     <ArticleDetails newsNJ={this.state.newsNJ} />
                 </div>

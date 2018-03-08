@@ -126,21 +126,20 @@ a#personal-twitter-link img {
 	height: 50px;
 }
 
-div.row.nj-news-articles {
-	width: 100%;
-	overflow: auto;
-}
-
-div.card.small {
-	float: left;
-}
-
-ul.horizontal-view {
-	display: inline;
-	float: left;
-}
-
-div.card-image {
-	width: 175px;
+img.article-image {
 	height: 150px;
+	width: 100px;
+}
+
+div.card.z-depth-3 {
+	width: 100%;
+	height: 325px;
+}
+
+a.article-card-link:link {
+	color: #000000;
+}
+
+a.article-card-link:hover {
+	color: purple;
 }
