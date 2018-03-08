@@ -9,7 +9,8 @@ class TrendingNews extends Component {
             url: "/fetch-news",
             method: "GET"
         }).then((resp) => {
-            // console.log(resp.data);
+            console.log("data from axios request");
+            console.log(resp.data);
             this.setState({
                 newsNJ: resp.data
             });
@@ -33,11 +34,14 @@ class TrendingNews extends Component {
     }
 
     render() {
-        // console.log(this.state.newsNJ);
+        console.log("data from TrendingNews component state");
+        console.log(this.state.newsNJ);
         return(
             <div>
                 <h1>nj.com news articles</h1>
-                <ArticleDetails newsNJ={this.state.newsNJ} />
+                <div className="row nj-news-articles">
+                    <ArticleDetails newsNJ={this.state.newsNJ} />
+                </div>
             </div>
         );
     }

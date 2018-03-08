@@ -26,7 +26,6 @@ app.get('/fetch-news', function(req, res) {
 			results.push({ link: articleLink, image: articleImgLink, headline: finalHeadline });
 		});
 
-		console.log(results);
 		res.json(results);
 		
 	});
