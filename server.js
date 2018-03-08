@@ -3,6 +3,7 @@ var path = require("path");
 var cheerio = require('cheerio');
 var request = require('request');
 var apiKeys = require('./api-keys.js');
+var axios = require('axios');
 
 // console.log(apiKeys.nyTimesKey);
 
@@ -25,7 +26,8 @@ app.get('/fetch-news', function(req, res) {
 			results.push({ link: articleLink, image: articleImgLink, headline: finalHeadline });
 		});
 
-		res.send(results);
+		console.log(results);
+		res.json(results);
 		
 	});
 });
