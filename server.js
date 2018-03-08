@@ -2,6 +2,9 @@ var express = require("express");
 var path = require("path");
 var cheerio = require('cheerio');
 var request = require('request');
+var apiKeys = require('./api-keys.js');
+
+// console.log(apiKeys.nyTimesKey);
 
 const app = express();
 
@@ -9,28 +12,20 @@ app.get('/fetch-news', function(req, res) {
 
 	request('http://www.nj.com/politics', function(error, response, html) {
 
-		if(html) {
-			var $ = cheerio.load(html);
-			console.log("html loaded into cheerio successfully");
-			var results = [];
+		var $ = cheerio.load(html);
+		var results = [];
 
-			$('div#river-container ul').each(function(i, element) {
-				var articleLink = $(element).find('li').find('article').find("div.item-text").find("h2.h2.fullheadline").find("a").attr("href");
-				// var test = $(element).find('li');
-				results.push({ link: articleLink});
-			});
+		$('#river-container ul li.river-item.has-photo article').each(function(i, element) {
 
-			// console.log(results);
-			if(results) {
-				res.send(results);
-			}else {
-				console.log("loading results");
-			}
+			var articleLink = $(element).find('div.item-text').find('h2.h2.fullheadline').find('a').attr('href');
+			var articleImgLink = $(element).find('div.item-extra').find('div.item-photo').find('img').attr('src');
+			var articleHeadline = $(element).find('div.item-text').find('h2.h2.fullheadline').find('a').text();
+			var trimmedHeadline = articleHeadline.replace("\n                        ", "");
+			var finalHeadline = trimmedHeadline.replace('\n                    ', "");
+			results.push({ link: articleLink, image: articleImgLink, headline: finalHeadline });
+		});
 
-		}else {
-			console.log("no html loaded into cheerio yet");
-			res.redirect('/fetch-news');
-		}
+		res.send(results);
 		
 	});
 });
