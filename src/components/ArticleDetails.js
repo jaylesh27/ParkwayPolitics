@@ -2,7 +2,7 @@ import React from 'react';
 
 const ArticleDetails = (props) => {
     
-    if(props.newsNJ === undefined) {
+    if (props.newsNJ === undefined) {
         console.log("loading");
         return <div className="loading-div">Loading articles from https://www.nj.com/politics...</div>
     } else {
@@ -10,7 +10,7 @@ const ArticleDetails = (props) => {
         const articleList = props.newsNJ.map(article => {
             return (
                 <li key={article.id} className = "article-cards-list">
-                    <a className = "article-card-link" href={article.link}>
+                    <a className = "article-card-link" href={article.link} target="_blank">
                     <div className="col s6 m3">
                         <div className="card z-depth-3">
                             <div className = "card-image">

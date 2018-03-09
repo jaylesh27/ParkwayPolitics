@@ -4,16 +4,31 @@ import axios from 'axios';
 
 class TrendingNews extends Component {
 
-    fetchNews() {
+    // fetchNjNews gets news articles from nj.com/politics, makes a get request to server.js file that processes the request
+    fetchNjNews() {
         axios({
-            url: "/fetch-news",
+            url: '/api/fetch-nj-news',
             method: "GET"
         }).then((resp) => {
-            console.log("data from axios request");
-            console.log(resp.data);
+            // console.log("data from axios request");
+            // console.log(resp.data);
             this.setState({
                 newsNJ: resp.data
             });
+        });
+    }
+
+    // gets New Jersey focused news via NYT API
+    fetchNewsNYT() {
+        axios({
+            url: '/api/fetch-nyt-news',
+            method: 'GET'
+        }).then((resp) => {
+            console.log(resp);
+            
+            // this.setState({
+            //     newsNYT: resp.data
+            // });
         });
     }
 
@@ -25,21 +40,22 @@ class TrendingNews extends Component {
             newsNYT: undefined
         }
 
-        this.fetchNews = this.fetchNews.bind(this);
+        this.fetchNjNews = this.fetchNjNews.bind(this);
+        this.fetchNewsNYT = this.fetchNewsNYT.bind(this);
     }
 
 
     componentDidMount() {
-        this.fetchNews();
-
+        this.fetchNjNews();
+        // this.fetchNewsNYT();
     }
 
     render() {
-        console.log("data from TrendingNews component state");
-        console.log(this.state.newsNJ);
+        // console.log("data from TrendingNews component state");
+        // console.log(this.state.newsNJ);
         return(
             <div className="container">
-                <h4 className="center-align">Check out stories from nj.com. Support local journalism!</h4>
+                <h4 className="center-align">Check out stories from <a href="https://www.nj.com/politics" target="_blank">nj.com</a>. Support local journalism!</h4>
                 <div className="row nj-news-articles">
                     <ArticleDetails newsNJ={this.state.newsNJ} />
                 </div>

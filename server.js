@@ -3,13 +3,12 @@ var path = require("path");
 var cheerio = require('cheerio');
 var request = require('request');
 var apiKeys = require('./api-keys.js');
-var axios = require('axios');
 
 // console.log(apiKeys.nyTimesKey);
 
 const app = express();
 
-app.get('/fetch-news', function(req, res) {
+app.get('/api/fetch-nj-news', function(req, res) {
 
 	request('http://www.nj.com/politics', function(error, response, html) {
 
@@ -27,11 +26,25 @@ app.get('/fetch-news', function(req, res) {
 			results.push({ link: articleLink, image: articleImgLink, headline: finalHeadline, id: articleId });
 		});
 		// console.log(results);
-		res.json(results);
+
+		var eightResults = [];
+
+		for (i = 0; i < 8; i++) {
+			eightResults.push(results[i]);
+		}
+		
+		res.json(eightResults);
+		console.log(eightResults);
 		
 	});
 });
 
+app.get('/api/fetch-nyt-news', function(req, res) {
+
+	var queryURL = '';
+	
+
+});
 
 if (process.env.NODE_ENV !== "production") {
 	const webpackMiddleware = require("webpack-dev-middleware");

@@ -38,8 +38,8 @@ export default class LandingPage extends Component {
 
 					</div>
 				</div>
-				<AboutUs />
 				<TrendingNews />
+				<AboutUs />
 			</div>
 		);
 	}
