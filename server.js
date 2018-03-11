@@ -3,10 +3,21 @@ var path = require("path");
 var cheerio = require('cheerio');
 var request = require('request');
 var apiKeys = require('./api-keys.js');
-
-// console.log(apiKeys.nyTimesKey);
+var path = require('path');
+var bodyParser = require('body-parser');
+var axios = require('axios');
 
 const app = express();
+
+if (process.env.NODE_ENV !== "production") {
+	const webpackMiddleware = require("webpack-dev-middleware");
+	const webpack = require("webpack");
+	const webpackConfig = require("./webpack.config.js");
+	app.use(webpackMiddleware(webpack(webpackConfig)));
+	console.log("running webpack development server");
+} else {
+	app.use(express.static("build"));
+}
 
 app.get('/api/fetch-nj-news', function(req, res) {
 
@@ -42,18 +53,14 @@ app.get('/api/fetch-nj-news', function(req, res) {
 app.get('/api/fetch-nyt-news', function(req, res) {
 
 	var queryURL = '';
-	
-
 });
 
-if (process.env.NODE_ENV !== "production") {
-	const webpackMiddleware = require("webpack-dev-middleware");
-	const webpack = require("webpack");
-	const webpackConfig = require("./webpack.config.js");
-	app.use(webpackMiddleware(webpack(webpackConfig)));
-	console.log("running webpack development server");
-} else {
-	app.use(express.static("build"));
-}
+app.get("/", function(req, res) {
+	res.sendFile(__dirname + "/build/index.html");
+});
+
+app.get('*', function(req, res) {
+	res.sendStatus(404);
+});
 
 app.listen(process.env.PORT || 3000, () => console.log("listening on port"));

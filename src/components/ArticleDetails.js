@@ -3,10 +3,8 @@ import React from 'react';
 const ArticleDetails = (props) => {
     
     if (props.newsNJ === undefined) {
-        console.log("loading");
         return <div className="loading-div">Loading articles from https://www.nj.com/politics...</div>
     } else {
-        // console.log(props.newsNJ);
         const articleList = props.newsNJ.map(article => {
             return (
                 <li key={article.id} className = "article-cards-list">
@@ -27,7 +25,6 @@ const ArticleDetails = (props) => {
         });
         return <ul className="articles-list">{articleList}</ul>;
     }
-
 
 }
 

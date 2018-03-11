@@ -7,11 +7,9 @@ class TrendingNews extends Component {
     // fetchNjNews gets news articles from nj.com/politics, makes a get request to server.js file that processes the request
     fetchNjNews() {
         axios({
-            url: '/api/fetch-nj-news',
-            method: "GET"
+            method: 'get',
+            url: '/api/fetch-nj-news'
         }).then((resp) => {
-            // console.log("data from axios request");
-            // console.log(resp.data);
             this.setState({
                 newsNJ: resp.data
             });
@@ -26,9 +24,9 @@ class TrendingNews extends Component {
         }).then((resp) => {
             console.log(resp);
             
-            // this.setState({
-            //     newsNYT: resp.data
-            // });
+            this.setState({
+                newsNYT: resp.data
+            });
         });
     }
 
@@ -41,7 +39,7 @@ class TrendingNews extends Component {
         }
 
         this.fetchNjNews = this.fetchNjNews.bind(this);
-        this.fetchNewsNYT = this.fetchNewsNYT.bind(this);
+        // this.fetchNewsNYT = this.fetchNewsNYT.bind(this);
     }
 
 
@@ -51,8 +49,6 @@ class TrendingNews extends Component {
     }
 
     render() {
-        // console.log("data from TrendingNews component state");
-        // console.log(this.state.newsNJ);
         return(
             <div className="container">
                 <h4 className="center-align">Check out stories from <a href="https://www.nj.com/politics" target="_blank">nj.com</a>. Support local journalism!</h4>
