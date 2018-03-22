@@ -2,6 +2,7 @@ import React from 'react';
 
 import ron from '../../assets/images/ron-patel.jpg';
 import jay from '../../assets/images/jay-patel.jpg';
+import brian from '../../assets/images/brian-karabinchak.png';
 import twitter_icon from '../../assets/images/twitter-icon.png';
 
 const AboutUs = () => {
@@ -35,6 +36,20 @@ const AboutUs = () => {
 						Though Jay prefers Linkedin over Twitter, follow him on Twitter.  He'll eventually tweet something some day.
 					</p>
 					<a href="https://twitter.com/jaylesh27" target="_blank" id="personal-twitter-link"><img src={twitter_icon} alt="twitter icon" /></a>
+				</div>
+			</div>
+			<div className="row valign-wrapper" id="about-brian">
+				<div className="col s12 m8 offset-m2 l6 offset-l3">
+					<h4 className="center-align">Brian Karabinchak</h4>
+					<img src={brian} alt="brian karabinchak pic" className="circle responsive-img" />
+					<p>
+						Brian is a graduate of Rutgers University in New Brunswick.  He is a former data analyst at a forensic accounting firm and an aspiring AI programmer trying to help speed up the incoming technopocalypse or at least to make Jay unemployed.  In the meantime he's spending his time keeping up with the political comings and goings of New Jersey politicians.
+					</p>
+
+					{/* <p>
+						Though Jay prefers Linkedin over Twitter, follow him on Twitter.  He'll eventually tweet something some day.
+					</p>
+					<a href="https://twitter.com/jaylesh27" target="_blank" id="personal-twitter-link"><img src={twitter_icon} alt="twitter icon" /></a> */}
 				</div>
 			</div>
 

@@ -7,8 +7,8 @@ class TrendingNews extends Component {
     // fetchNjNews gets news articles from nj.com/politics, makes a get request to server.js file that processes the request
     fetchNjNews() {
         axios({
-            method: 'get',
-            url: '/api/fetch-nj-news'
+            url: '/api/fetch-nj-news',
+            method: 'GET'
         }).then((resp) => {
             this.setState({
                 newsNJ: resp.data
