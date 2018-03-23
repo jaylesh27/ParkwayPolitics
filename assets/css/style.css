@@ -11,6 +11,7 @@
 	background-image: url("../images/NJ_State_House.jpg");
 	background-size: cover;
 	background-position: center center;
+	background-attachment: fixed;
 	position: relative;
 	top: 0;
 	bottom: 0;
