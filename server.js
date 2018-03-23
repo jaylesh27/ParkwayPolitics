@@ -5,9 +5,26 @@ var request = require('request');
 var apiKeys = require('./api-keys.js');
 var path = require('path');
 var bodyParser = require('body-parser');
-var axios = require('axios');
 
 const app = express();
+
+// process.env.NODE_ENV = 'production';
+
+if (process.env.NODE_ENV !== "production") {
+	const webpackMiddleware = require("webpack-dev-middleware");
+	const webpack = require("webpack");
+	const webpackConfig = require("./webpack.config.js");
+	app.use(webpackMiddleware(webpack(webpackConfig)));
+	console.log("running webpack development server");
+} else {
+	console.log("running production");
+	// app.use(express.static("build"));
+
+	// app.get("/", function(req, res) {
+	// 	res.sendFile(__dirname + "/build/index.html");
+	// });
+	
+}
 
 app.use(function(req, res, next) {
 	res.header("Access-Control-Allow-Origin", "*");
@@ -19,17 +36,14 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
-  
 
-if (process.env.NODE_ENV !== "production") {
-	const webpackMiddleware = require("webpack-dev-middleware");
-	const webpack = require("webpack");
-	const webpackConfig = require("./webpack.config.js");
-	app.use(webpackMiddleware(webpack(webpackConfig)));
-	console.log("running webpack development server");
-} else {
-	app.use(express.static("build"));
-}
+app.use(express.static("build"));
+
+
+app.get("/", function(req, res) {
+	res.sendFile(__dirname + "/build/index.html");
+});
+
 
 app.get('/api/fetch-nj-news', function(req, res) {
 
@@ -62,16 +76,14 @@ app.get('/api/fetch-nj-news', function(req, res) {
 	});
 });
 
+
 app.get('/api/fetch-nyt-news', function(req, res) {
 
 	var queryURL = '';
 });
 
-app.get("/", function(req, res) {
-	res.sendFile(__dirname + "/build/index.html");
-});
 
-app.get('*', function(req, res) {
+app.get('/*', function(req, res) {
 	res.sendStatus(404);
 });
 
