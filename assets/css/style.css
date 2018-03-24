@@ -123,9 +123,15 @@ a#personal-twitter-link img {
 	height: 50px;
 }
 
-img.article-image {
-	height: 150px;
-	width: 100px;
+.article-image {
+	width: 100%;
+	height: auto;
+	transform: scale(0.90);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.article-image:hover {
+	transform: scale(1);
 }
 
 div.card.z-depth-3 {
