@@ -3,7 +3,7 @@ import React from 'react';
 const ArticleDetails = (props) => {
     
     if (props.newsNJ === undefined) {
-        return <div className="loading-div">Loading articles from https://www.nj.com/politics...</div>
+        return <div className="loading-div">Loading articles from http://www.nj.com/politics...</div>
     } else {
         const articleList = props.newsNJ.map(article => {
             return (

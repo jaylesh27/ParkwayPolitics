@@ -45,11 +45,6 @@ const AboutUs = () => {
 					<p>
 						Brian is a graduate of Rutgers University in New Brunswick.  He is a former data analyst at a forensic accounting firm and an aspiring AI programmer trying to help speed up the incoming technopocalypse or at least to make Jay unemployed.  In the meantime he's spending his time keeping up with the political comings and goings of New Jersey politicians.
 					</p>
-
-					{/* <p>
-						Though Jay prefers Linkedin over Twitter, follow him on Twitter.  He'll eventually tweet something some day.
-					</p>
-					<a href="https://twitter.com/jaylesh27" target="_blank" id="personal-twitter-link"><img src={twitter_icon} alt="twitter icon" /></a> */}
 				</div>
 			</div>
 
