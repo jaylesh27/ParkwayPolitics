@@ -18,12 +18,6 @@ if (process.env.NODE_ENV !== "production") {
 	console.log("running webpack development server");
 } else {
 	console.log("running production");
-	// app.use(express.static("build"));
-
-	// app.get("/", function(req, res) {
-	// 	res.sendFile(__dirname + "/build/index.html");
-	// });
-	
 }
 
 app.use(function(req, res, next) {
