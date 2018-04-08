@@ -10,7 +10,7 @@ const AboutUs = () => {
 	return (
 		<div>
 			<NavBar />
-			<div className="row about-us-section">
+			{/* <div className="row about-us-section">
 				<h3 className="center-align">Meet the (soon-to-be) illustrious hosts</h3>
 				<div className="divider"></div>
 				<div className="row valign-wrapper" id="about-ron">
@@ -49,7 +49,7 @@ const AboutUs = () => {
 						</p>
 					</div>
 				</div>
-			</div>
+			</div> */}
 		</div>
 	);
 };

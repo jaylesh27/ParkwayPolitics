@@ -50,9 +50,8 @@ class TrendingNews extends Component {
 
     render() {
         return(
-            <div className="container">
-                <h4 className="center-align">Check out stories from <a href="http://www.nj.com/politics" target="_blank">nj.com</a>. Support local journalism!</h4>
-                <div className="row nj-news-articles">
+            <div className="container-fluid">
+                <div className="row">
                     <ArticleDetails newsNJ={this.state.newsNJ} />
                 </div>
             </div>

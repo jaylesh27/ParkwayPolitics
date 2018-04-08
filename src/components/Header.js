@@ -20,7 +20,7 @@ const Header = () => {
 				</div>
 			</nav>
 			<div className="header-box">
-			<h1>Welcome to Parkway Politics'<br></br> home on the web</h1>
+				<h1>Welcome to Parkway Politics' home on the web</h1>
 			</div>
 		</header>
 	);

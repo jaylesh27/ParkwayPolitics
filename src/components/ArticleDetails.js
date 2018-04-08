@@ -1,31 +1,35 @@
-import React from 'react';
+import React from "react";
 
-const ArticleDetails = (props) => {
-    
-    if (props.newsNJ === undefined) {
-        return <div className="loading-div">Loading articles from http://www.nj.com/politics...</div>
-    } else {
-        const articleList = props.newsNJ.map(article => {
-            return (
-                <li key={article.id} className = "article-cards-list">
-                    <a className = "article-card-link" href={article.link} target="_blank">
-                    <div className="col s6 m3">
-                        <div className="card z-depth-3">
-                            <div className = "card-image">
-                                <img className="article-image" src={article.image}></img>
-                            </div>
-                            <div className = "card-content">
-                                <p>{article.headline}</p>
-                            </div>
-                        </div>
-                    </div>
-                    </a>
-                </li>
-            );
-        });
-        return <ul className="articles-list">{articleList}</ul>;
-    }
+// article.id article.link, article.image, article.headline
 
-}
+const ArticleDetails = props => {
+  if (props.newsNJ === undefined) {
+    return (
+      <div className="loading-div">
+        Loading articles from http://www.nj.com/politics...
+      </div>
+    );
+  } else {
+    const articleList = props.newsNJ.map(article => {
+      return (
+        <li key={article.id}>
+          <a href={article.link} target="_blank">
+            <div>
+              <div>
+                <div>
+                  <img className="article-image" src={article.image} />
+                </div>
+                <div>
+                  <p>{article.headline}</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </li>
+      );
+    });
+    return <ul className="articles-list">{articleList}</ul>;
+  }
+};
 
 export default ArticleDetails;

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from 'react-router-dom';
 import AboutUs from './AboutUs';
 import TrendingNews from './TrendingNews';
 import Header from './Header';
@@ -13,7 +14,43 @@ export default class LandingPage extends Component {
 		return(
 			<div>
 				<Header />
-				
+				<div className="container-fluid intro-section">
+					<div className="row justify-content-center">
+						<h2>So much fake news, so little time</h2>
+					</div>
+					<div className="row justify-content-center">
+						<p className="intro-text">But we do hope you'll make time for us. Our podcast is dedicated to bringing New Jersey residents the news they need to stay informed in our current ten-news-cycles-a-day maelstrom. Stick with us as we dig deep into what's happening in New Jersey and occasionally comment on what's happening at the national level because there's certainly a lot of crazy to dissect up there.</p>
+					</div>
+					<div className="row">
+						<div className="col-lg-6 col-sm-12">
+							<div className="intro-section-box">
+								<div>
+									<h3>Who are we?</h3>
+								</div>
+								<div id="about-us-blurb">
+
+								</div>
+								<div>
+									<Link to="/about-us"><button type="button">Read more about us</button></Link>
+								</div>
+							</div>
+						</div>
+						<div className="col-lg-6 col-sm-12">
+							<div className="latest-episode-box">
+								<div>
+									<h3>Latest episode</h3>
+								</div>
+								<div id="soundcloud-embed">
+									<iframe width="80%" height="100%" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/425461890&color=%238d36a7&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true"></iframe>
+								</div>
+								<div>
+									<Link to="/episodes"><button type="button">Check out our past episodes</button></Link>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				{/* <TrendingNews /> */}
 			</div>
 		);
 	}
