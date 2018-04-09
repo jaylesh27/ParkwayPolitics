@@ -1,7 +1,5 @@
 import React from "react";
 
-// article.id article.link, article.image, article.headline
-
 const ArticleDetails = props => {
   if (props.newsNJ === undefined) {
     return (
@@ -12,23 +10,17 @@ const ArticleDetails = props => {
   } else {
     const articleList = props.newsNJ.map(article => {
       return (
-        <li key={article.id}>
-          <a href={article.link} target="_blank">
-            <div>
-              <div>
-                <div>
-                  <img className="article-image" src={article.image} />
-                </div>
-                <div>
-                  <p>{article.headline}</p>
-                </div>
-              </div>
+        <a href={article.link} target="_blank" key={article.id}>
+          <li className="article-list-item">
+            <div className="row justify-content-center">
+              <img src={article.image} />
+              <p>{article.headline}</p>
             </div>
-          </a>
-        </li>
+          </li>
+        </a>
       );
     });
-    return <ul className="articles-list">{articleList}</ul>;
+    return <ul className="article-list">{articleList}</ul>;
   }
 };
 

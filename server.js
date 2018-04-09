@@ -58,14 +58,16 @@ app.get('/api/fetch-nj-news', function(req, res) {
 		});
 		// console.log(results);
 
-		var eightResults = [];
+		// var eightResults = [];
 
-		for (i = 0; i < 8; i++) {
-			eightResults.push(results[i]);
-		}
+		// for (i = 0; i < 8; i++) {
+		// 	eightResults.push(results[i]);
+		// }
 		
-		res.json(eightResults);
-		console.log(eightResults);
+		// res.json(eightResults);
+		// console.log(eightResults);
+
+		res.json(results);
 		
 	});
 });

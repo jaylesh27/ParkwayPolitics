@@ -50,9 +50,19 @@ class TrendingNews extends Component {
 
     render() {
         return(
-            <div className="container-fluid">
-                <div className="row">
-                    <ArticleDetails newsNJ={this.state.newsNJ} />
+            <div className="container-fluid articles-section">
+                <div className="row justify-content-center">
+                    <h2>Check out these articles from nj.com</h2>
+                </div>
+                <div className="row justify-content-center">
+                    <div className="col-lg-6 col-md-8 col-sm-12">
+					<p className="text">Our podcast is built upon the work that local journalists do in New Jersey.  Check out the good work done by publications like nj.com</p>
+                    </div>
+				</div>
+                <div className="row justify-content-center">
+                    <div className="col-lg-8 col-md-6 col-sm-10">
+                        <ArticleDetails newsNJ={this.state.newsNJ} />
+                    </div>
                 </div>
             </div>
         );
