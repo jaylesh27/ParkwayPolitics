@@ -8,6 +8,9 @@ import logo from '../../assets/images/parkway-politics-logo.jpg';
 import soundcloud_icon from '../../assets/images/soundcloud-icon.png';
 import twitter_icon from '../../assets/images/twitter-icon.png';
 import facebook_icon from '../../assets/images/facebook-icon.png';
+import ron from '../../assets/images/ron-patel.jpg';
+import jay from '../../assets/images/jay-patel.jpg';
+import brian from '../../assets/images/brian-karabinchak.png';
 
 export default class LandingPage extends Component {
 
@@ -26,10 +29,19 @@ export default class LandingPage extends Component {
 						<div className="col-lg-4 col-md-6 col-sm-8">
 							<div className="intro-section-box">
 								<div>
-									<h3>Who are we?</h3>
+									<h3>Who we are</h3>
 								</div>
 								<div id="about-us-blurb">
-
+									<div className="host-images">
+										<img src={ron} alt="ron" />
+										<img src={jay} alt="jay" />
+										<img src={brian} alt="brian" />
+									</div>
+									<div>
+										<p className="about-us-blurb-text">
+											We are supremely authoritative voices and you should take everything we say as indisputable fact.
+										</p>
+									</div>
 								</div>
 								<div>
 									<Link to="/about-us"><button type="button">Read more about us</button></Link>

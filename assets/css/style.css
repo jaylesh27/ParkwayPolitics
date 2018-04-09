@@ -32,6 +32,16 @@ h2 {
 	letter-spacing: 1px;
 }
 
+h2:after {
+	display: block;
+	height: 3px;
+	background-color: #913EE4;
+	content: " ";
+	width: 200px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
 h3 {
 	font-size: 150%;
 	font-weight: 300;
@@ -82,7 +92,7 @@ header {
 
 .nav-row-two {
 	width: 100%;
-	background-color: #000;
+	background-color: #333;
 }
 
 
@@ -175,6 +185,18 @@ h1 {
 .intro-section-box div,
 .latest-episode-box div {
 	border-bottom: 1px solid #e8e8e8;
+}
+
+.host-images img {
+	height: 50px;
+	width: 50px;
+	border-radius: 40px;
+	margin-left: 10px;
+	margin-bottom: 5px;
+}
+
+.about-us-blurb-text {
+	font-size: 80%;
 }
 
 
@@ -294,6 +316,61 @@ h1 {
 	background-color: #913EE4;
 	border-radius: 20px;
 }
+
+/* -------------------- */
+/* ABOUT US PAGE */
+/* -------------------- */
+
+.mission-section .row:last-child {
+	margin-top: 30px;
+	margin-left: 30px;
+}
+
+
+#new-jersey-image {
+	width: 65%;
+	height: 500px;
+	padding-top: 60px;
+}
+
+.mission-text {
+	font-size: 80%;
+	margin-right: 30px;
+}
+
+.hosts-section {
+	background-color: #f4f4f4;
+}
+
+.about-host {
+	display: inline-block;
+	/* border: 1px solid #000; */
+	/* background-color: #fff; */
+	text-align: center;
+	padding: 30px;
+}
+
+.about-host h4 {
+	margin: 15px 0;
+}
+
+.twitter-icon {
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+}
+
+.host-pic {
+	width: 130px;
+	height: 130px;
+	border-radius: 100px;
+}
+
+.about-host p {
+	font-size: 75%;
+	margin-top: 25px;
+}
+
 
 /* -------------------- */
 /* FOOTER */
