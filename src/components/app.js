@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import LandingPage from './LandingPage';
 import AboutUs from './AboutUs';
-import PodcastList from './PodcastList';
+import AllPodcasts from './AllPodcasts';
 
 export default class App extends Component {
   render() {
@@ -11,7 +11,7 @@ export default class App extends Component {
         <div>
           <Switch>
             <Route path="/about-us" component={AboutUs} />
-            <Route path="/episodes" component={PodcastList} />
+            <Route path="/episodes" component={AllPodcasts} />
             <Route path="/" component={LandingPage} />
           </Switch>
         </div>

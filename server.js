@@ -5,6 +5,9 @@ var request = require('request');
 // var apiKeys = require('./api-keys.js');
 var path = require('path');
 var bodyParser = require('body-parser');
+var podcastData = require('./episodes.json');
+
+// console.log(podcastData[0]);
 
 const app = express();
 
@@ -56,16 +59,6 @@ app.get('/api/fetch-nj-news', function(req, res) {
 			var articleId = $(element).parent().attr('data-resource-id');
 			results.push({ link: articleLink, image: articleImgLink, headline: finalHeadline, id: articleId });
 		});
-		// console.log(results);
-
-		// var eightResults = [];
-
-		// for (i = 0; i < 8; i++) {
-		// 	eightResults.push(results[i]);
-		// }
-		
-		// res.json(eightResults);
-		// console.log(eightResults);
 
 		res.json(results);
 		
@@ -76,6 +69,11 @@ app.get('/api/fetch-nj-news', function(req, res) {
 app.get('/api/fetch-nyt-news', function(req, res) {
 
 	var queryURL = '';
+});
+
+app.get('/api/fetch-podcasts', function(req, res) {
+	console.log('sending podcast data');
+	res.json(podcastData);
 });
 
 
