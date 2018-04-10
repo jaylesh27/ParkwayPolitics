@@ -16,7 +16,7 @@ const Footer = () => {
                 <div className="col-lg-6 col-md-6 col-sm-12">
                     <ul className="footer-nav-right">
                         <li>&nbsp;</li>
-                        <li>Copyright &copy; 2018 by Parkway Politics</li>
+                        <li>&copy; 2018 by Parkway Politics</li>
                         <li>Website designed and built by <a href="http://www.jayleshpatel.com" target="_blank">Jay Patel</a></li>
                     </ul>
                 </div>

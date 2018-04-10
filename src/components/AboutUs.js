@@ -70,7 +70,7 @@ const AboutUs = () => {
 							</div>
 							<div>
 								<p>
-									Jay is a graduate of Rutgers University with degrees in finance and supply chain management though he has now shifted careers to web development and in his free time pretends to be a skilled political commentator.  While he improves his web developer skills and looks for a job before they all get sent to Mexico or China or (more likely) taken away by AI robots, he thought making a podcast would be a great thing to say as a filler whenever relatives and others ask him what he does.
+									Jay is a graduate of Rutgers University with degrees in finance and supply chain management though he has now shifted careers to web development.  In his free time, he pretends to be a skilled political commentator.  While he improves his web developer skills and looks for a job before they all get sent to Mexico or China or (more likely) taken away by AI robots, he thought making a podcast would be a great thing to say as a filler whenever relatives and others ask him what he does.
 								</p>
 								<p>
 									Follow Jay on twitter.  Do not be alarmed by his lack of followers/tweets: up until the launch of this podcast, Jay used Twitter as both a news feed and spiritual self-flagellation.

@@ -29,7 +29,7 @@ export default class LandingPage extends Component {
 						<div className="col-lg-4 col-md-6 col-sm-8">
 							<div className="intro-section-box">
 								<div>
-									<h3>Who we are</h3>
+									<h3>Who are we?</h3>
 								</div>
 								<div id="about-us-blurb">
 									<div className="host-images">
@@ -39,7 +39,7 @@ export default class LandingPage extends Component {
 									</div>
 									<div>
 										<p className="about-us-blurb-text">
-											We are supremely authoritative voices and you should take everything we say as indisputable fact.
+											{/*We are supremely authoritative people and you should take everything we say as indisputable fact.  Not really.  */}And why are we here?  No, we're not philosophers.  We are simply three millenials that are dedicated to bringing New Jerseyans the news they need to stay informed about New Jersey politics.  Click below to find out more.
 										</p>
 									</div>
 								</div>

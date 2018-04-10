@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import NavBar from './NavBar';
+import PodcastList from './PodcastList';
 import Footer from './Footer';
 
 class AllPodcasts extends Component {
@@ -11,7 +12,7 @@ class AllPodcasts extends Component {
             method: 'GET'
         }).then((resp) => {
             this.setState({
-                allPodcasts: resp.data
+                podcastData: resp.data
             });
         });
     }
@@ -20,7 +21,7 @@ class AllPodcasts extends Component {
         super(props);
 
         this.state = {
-            allPodcasts: undefined
+            podcastData: undefined
         }
 
         this.fetchPodcasts = this.fetchPodcasts.bind(this);
@@ -38,10 +39,10 @@ class AllPodcasts extends Component {
                 <NavBar />
                 <div className="container-fluid all-podcasts">
                     <div className="row justify-content-center">
-                        <h2>All Podcasts</h2>
+                        <h2>All episodes</h2>
                     </div>
                     <div className="row justify-content-center">
-                        
+                        <PodcastList episodes={this.state.podcastData} />
                     </div>
                 </div>
                 <Footer />

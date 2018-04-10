@@ -22,6 +22,10 @@ body, html {
 h1 {
     font-weight: 300;
 	text-transform: uppercase;
+	color: #fff;
+	font-size: 240%;
+    word-spacing: 5px;
+    letter-spacing: 1px;
 }
 
 h2 {
@@ -95,7 +99,6 @@ header {
 	background-color: #333;
 }
 
-
 .nav-logo {
 	width: auto;
 	height: 100px;
@@ -114,13 +117,6 @@ header {
 .main-nav li {
 	display: inline-block;
 	margin-left: 30px;
-}
-
-h1 {
-	color: #fff;
-	font-size: 240%;
-    word-spacing: 5px;
-    letter-spacing: 1px;
 }
 
 .header-box {
@@ -197,6 +193,7 @@ h1 {
 
 .about-us-blurb-text {
 	font-size: 80%;
+	text-align: left;
 }
 
 
@@ -278,13 +275,6 @@ h1 {
 
 .article-list-item:hover {
 	box-shadow: 0 0 5px #913EE4;
-}
-
-/* small phones from 0 to 480 pixels */
-@media only screen and (max-width: 480px) {
-	.article-list-item {
-		width: 90%;
-	}
 }
 
 .article-list-item img {
@@ -373,6 +363,25 @@ h1 {
 
 
 /* -------------------- */
+/* EPISODES PAGE */
+/* -------------------- */
+
+.podcast-list {
+	list-style: none;
+	width: 85%;
+	margin-top: 30px;
+}
+
+.podcast-list-item {
+	margin-bottom: 30px;
+}
+
+.podcast-list-item p {
+	font-size: 80%;
+}
+
+
+/* -------------------- */
 /* FOOTER */
 /* -------------------- */
 
@@ -417,4 +426,64 @@ footer a:active {
 .footer-nav-left li,
 .footer-nav-right li {
 	margin-top: 5px;
+}
+
+
+/* -------------------- */
+/* MEDIA QUERIES */
+/* -------------------- */
+
+
+/* Small tablet to big tablet: from 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+	
+
+}
+
+/* small phones to small tablets from 481 to 767 pixels */
+@media only screen and (max-width: 767px) {
+
+	.main-nav {
+		float: right;
+		margin-top: 20px;
+		margin-bottom: 15px;
+		margin-left: 0;
+		margin-right: 35px;
+	}
+
+	.main-nav li {
+		display: block;
+	}
+
+	.main-nav li a:link,
+	.main-nav li a:visited {
+		padding: 10px 0;
+		color: #FFF;
+		text-decoration: none;
+		font-size: 90%;
+		border-bottom: none;
+		transition: color 0.2s;
+	}
+
+	.main-nav li a:hover,
+	.main-nav li a:active {
+		color: #913EE4;
+	}
+
+}
+
+/* small phones from 0 to 480 pixels */
+@media only screen and (max-width: 480px) {
+	.article-list-item {
+		width: 90%;
+	}
+
+	h1 {
+		margin-top: 90px;
+		font-size: 200%;
+	}
+
+	.podcast-title {
+		margin-top: 10px;
+	}
 }
