@@ -1,2 +1,2 @@
 # ParkwayPolitics
-Website for [Parkway Politics](https://www.parkwaypolitics.com) podcast.
+Website for [Parkway Politics](http://www.parkwaypolitics.com) podcast.

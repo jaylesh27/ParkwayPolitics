@@ -13,6 +13,11 @@ body, html {
 	background-color: #fff;
 	color: #555;
 	margin: 0;
+	height: 100%;
+}
+
+body {
+	position: relative;
 }
 
 /* -------------------- */
@@ -211,6 +216,7 @@ header {
 	background-color: #fff;
 	border: 1px solid #913EE4;
 	transition: background-color 0.3s, color 0.3s;
+	cursor: pointer;
 }
 
 .intro-section-box button:hover,

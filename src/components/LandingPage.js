@@ -39,7 +39,7 @@ export default class LandingPage extends Component {
 									</div>
 									<div>
 										<p className="about-us-blurb-text">
-											{/*We are supremely authoritative people and you should take everything we say as indisputable fact.  Not really.  */}And why are we here?  No, we're not philosophers.  We are simply three millenials that are dedicated to bringing New Jerseyans the news they need to stay informed about New Jersey politics.  Click below to find out more.
+											{/*We are supremely authoritative people and you should take everything we say as indisputable fact.  Not really.  */}And why are we here?  No, we're not philosophers.  We are simply three millenials who are dedicated to bringing New Jerseyans the news they need to stay informed about New Jersey politics.  Click below to find out more.
 										</p>
 									</div>
 								</div>
