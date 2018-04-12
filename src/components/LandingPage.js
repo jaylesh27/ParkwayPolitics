@@ -39,7 +39,7 @@ export default class LandingPage extends Component {
 									</div>
 									<div>
 										<p className="about-us-blurb-text">
-											{/*We are supremely authoritative people and you should take everything we say as indisputable fact.  Not really.  */}And why are we here?  No, we're not philosophers.  We are simply three millenials who are dedicated to bringing New Jerseyans the news they need to stay informed about New Jersey politics.  Click below to find out more.
+											And why are we here?  No, we're not philosophers.  We are simply three millenials who are dedicated to bringing New Jerseyans the news they need to stay informed about New Jersey politics.  Click below to find out more.
 										</p>
 									</div>
 								</div>
@@ -54,7 +54,7 @@ export default class LandingPage extends Component {
 									<h3>Latest episode</h3>
 								</div>
 								<div id="soundcloud-embed">
-									<iframe width="80%" height="100%" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/425461890&color=%238d36a7&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true"></iframe>
+									<iframe width="90%" height="100%" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/428850804&color=%23913ee4&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true"></iframe>
 								</div>
 								<div>
 									<Link to="/episodes"><button type="button">Previous episodes</button></Link>
