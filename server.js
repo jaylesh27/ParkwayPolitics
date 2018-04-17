@@ -78,7 +78,7 @@ app.get('/api/fetch-podcasts', function(req, res) {
 
 
 app.get('/*', function(req, res) {
-	res.sendStatus(404);
+	res.sendFile(__dirname + "/build/index.html");
 });
 
 app.listen(process.env.PORT || 3000, () => console.log("listening on port"));
