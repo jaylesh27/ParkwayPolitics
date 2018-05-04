@@ -1,5 +1,67 @@
 [
     {
+        "episode": 11,
+        "title": "A Deep Drive into the Parkway State's Pension Crisis",
+        "soundcloudLink": "<iframe width='100%' height='166' scrolling='no' frameborder='no' allow='autoplay' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/438835080&color=%23913ee4&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false'></iframe>",
+        "description": "This week's episode is focused solely on the New Jersey pension crisis: the history of how we got here, the current situation, and what can expect from the future if New Jersey doesn't take concrete action to meet its pension obligations.",
+        "length": "50 min",
+        "releaseDate": "May 3, 2018",
+        "sourceLinks": [
+            {
+                "linkHeadline": "How did N.J. get into this pension mess?",
+                "link": "http://www.nj.com/politics/index.ssf/2015/01/how_did_nj_get_into_this_pension_mess.html"
+            },
+            {
+                "linkHeadline": "History of Pension Plans",
+                "link": "https://www.ebri.org/publications/facts/index.cfm?fa=0398afact"
+            },
+            {
+                "linkHeadline": "Christie pension fixes not enough and Murphy faces huge problem, report says",
+                "link": "http://www.nj.com/politics/index.ssf/2017/12/christie_pension_fixes_not_enough_murphy_faces_hug.html"
+            },
+            {
+                "linkHeadline": "Nearly 2,000 retired N.J. public workers collecting $100,000-plus pensions, report says",
+                "link": "http://www.nj.com/politics/index.ssf/2015/02/nearly_2000_retired_nj_public_workers_collecting_1.html"
+            },
+            {
+                "linkHeadline": "GOP lawmaker: Murphy's budget ignores ticking time bomb - pension payments | Opinion",
+                "link": "http://www.nj.com/opinion/index.ssf/2018/03/gop_lawmaker_murphys_spending_plan_ignores_ticking_time_bomb_-_pension_payments_opinion.html"
+            },
+            {
+                "linkHeadline": "The 80% Pension Funding Standard Myth",
+                "link": "https://www.actuary.org/files/80_Percent_Funding_IB_071912.pdf"
+            },
+            {
+                "linkHeadline": "U.S. Pension Fund Collapse Isn't a Distant Prospect. It Could Come in 5 Years.",
+                "link": "https://www.bloomberg.com/view/articles/2018-04-18/collapse-of-public-pension-funds-is-no-longer-a-distant-prospect"
+            },
+            {
+                "linkHeadline": "Murphy reverses Christie on crucial N.J. pension change",
+                "link": "http://www.nj.com/politics/index.ssf/2018/03/murphy_reverses_christie_on_crucial_nj_pension_cha.html"
+            },
+            {
+                "linkHeadline": "Can We Fix the Public Pensions Crisis?",
+                "link": "https://insights.som.yale.edu/insights/can-we-fix-the-public-pensions-crisis"
+            },
+            {
+                "linkHeadline": "Wisconsin's fully funded pension system is one of a kind",
+                "link": "https://projects.jsonline.com/news/2016/9/26/wisconsins-fully-funded-pension-system-is-one-of-a-kind.html"
+            },
+            {
+                "linkHeadline": "A $76,000 Monthly Pension: Why States and Cities Are Short on Cash",
+                "link": "https://www.nytimes.com/2018/04/14/business/pension-finance-oregon.html"
+            },
+            {
+                "linkHeadline": "State Pension Funding Hits Record Shortfall, Report Finds",
+                "link": "https://www.usnews.com/news/business/articles/2018-04-12/state-pension-funding-hits-record-shortfall-report-finds"
+            },
+            {
+                "linkHeadline": "The State Pension Funding Gap: 2016",
+                "link": "http://www.pewtrusts.org/en/research-and-analysis/issue-briefs/2018/04/the-state-pension-funding-gap-2016"
+            }
+        ]
+    },
+    {
         "episode": 10,
         "title": "Abbot Wins, Everyone Move to Texas",
         "soundcloudLink": "<iframe width='100%' height='166' scrolling='no' frameborder='no' allow='autoplay' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/436517136&color=%23913ee4&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false'></iframe>",

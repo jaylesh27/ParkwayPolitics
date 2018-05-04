@@ -1,16 +1,17 @@
 import React from 'react';
 import NavBar from './NavBar';
 import Footer from './Footer';
-import { Link } from 'react-router-dom';
 
 const PodcastDetail = (props) => {
     
     console.log(props.location.state);
     const podcastDetails = props.location.state.podcastData;
 
-    const showNotes = podcastDetails.sourceLinks.map((link) => {
+    const showNotes = podcastDetails.sourceLinks.map((source) => {
         return(
-            <li key={podcastDetails.episode}><a href={link.link}>{link.linkHeadline}</a></li>
+            <li key={podcastDetails.episode}>
+                <a href={source.link} target="_blank">{source.linkHeadline}</a>
+            </li>
         );
     });
 

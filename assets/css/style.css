@@ -393,6 +393,17 @@ header {
 	font-size: 80%;
 }
 
+.podcast-list-item a:link,
+.podcast-list-item a:visited {
+	text-decoration: none;
+	color: inherit;
+}
+
+.podcast-list-item a:hover,
+.podcast-list-item a:active {
+	color: #913EE4;
+}
+
 
 /* -------------------- */
 /* Podcast Details page */
@@ -529,5 +540,17 @@ footer a:active {
 
 	.podcast-title {
 		margin-top: 10px;
+	}
+
+	.podcast-details p.text, .podcast-details div.text {
+		padding: 0;
+	}
+
+	.footer-nav-left {
+		margin: 0;
+	}
+
+	#new-jersey-image {
+		display: none;
 	}
 }

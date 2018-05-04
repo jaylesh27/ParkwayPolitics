@@ -8,7 +8,7 @@ const NavBar = () => {
         <nav>
             <div className="row">
                 <div className="nav-row-two">
-                    <Link to="/"><img src={logo} className="nav-logo" alt="parkway politics logo" /></Link>
+                    <Link to="/"><img src={logo} className="nav-logo" alt="logo" /></Link>
                     <ul className="main-nav">
                         <li><Link to="/about-us">About us</Link></li>
                         <li><Link to="/episodes">Episodes</Link></li>
