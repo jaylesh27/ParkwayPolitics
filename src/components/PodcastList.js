@@ -1,5 +1,5 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const PodcastList = (props) => {
     
@@ -18,7 +18,14 @@ const PodcastList = (props) => {
                             <h5 className="podcast-title">{podcast.title}</h5>
                             <h6>{podcast.releaseDate}</h6>
                             <p>{podcast.description}</p>
-                            {/* <button><Link to="/episodes/:id">See more...</Link></button> */}
+                            <button>
+                                <Link to={{
+                                    pathname: `/episodes/${podcast.episode}`,
+                                    state: {
+                                        podcastData: podcast
+                                    }
+                                }}>See more...</Link>
+                            </button>
                         </div>
                     </div>
                 </li>

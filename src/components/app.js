@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import LandingPage from "./LandingPage";
 import AboutUs from "./AboutUs";
 import AllPodcasts from "./AllPodcasts";
+import PodcastDetail from './PodcastDetail';
 import ScrollToTop from "./ScrollToTop";
 
 export default class App extends Component {
@@ -13,6 +14,7 @@ export default class App extends Component {
           <div>
             <Switch>
               <Route path="/about-us" component={AboutUs} />
+              <Route path="/episodes/:podcastId" component={PodcastDetail} />
               <Route path="/episodes" component={AllPodcasts} />
               <Route path="/" component={LandingPage} />
             </Switch>

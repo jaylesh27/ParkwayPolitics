@@ -380,11 +380,49 @@ header {
 
 .podcast-list-item {
 	margin-bottom: 30px;
+	padding: 30px;
+	box-shadow: 0 0 5px #555;
+	transition: box-shadow 0.2s;
+}
+
+.podcast-list-item:hover {
+	box-shadow: 0 0 5px #913EE4;
 }
 
 .podcast-list-item p {
 	font-size: 80%;
 }
+
+
+/* -------------------- */
+/* Podcast Details page */
+/* -------------------- */
+
+
+.podcast-details h3:after {
+	display: block;
+	height: 3px;
+	background-color: #913EE4;
+	content: " ";
+	width: 200px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.podcast-details li {
+	margin: 10px 0;
+}
+
+/* .podcast-details a:link,
+.podcast-details a:visited {
+	color: inherit;
+	text-decoration: none;
+}
+
+.podcast-details a:hover,
+.podcast-details a:active {
+	color: #913EE4;
+} */
 
 
 /* -------------------- */
