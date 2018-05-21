@@ -7,6 +7,7 @@ const PodcastDetail = (props) => {
     console.log(props.location.state);
     const podcastDetails = props.location.state.podcastData;
 
+
     const showNotes = podcastDetails.sourceLinks.map((source) => {
         return(
             <li key={podcastDetails.episode}>
@@ -14,6 +15,7 @@ const PodcastDetail = (props) => {
             </li>
         );
     });
+
 
     return (
         <div>

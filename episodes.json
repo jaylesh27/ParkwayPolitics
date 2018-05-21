@@ -1,5 +1,123 @@
 [
     {
+        "episode": 16,
+        "title": "Short Drive Through District 8",
+        "soundcloudLink": "<iframe width='100%' height='166' scrolling='no' frameborder='no' allow='autoplay' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/446068812&color=%23913ee4&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true'></iframe>",
+        "description": "Over the next few weeks, the Parkway Politics crew will post short yet informative monologues on the individual districts of New Jersey. In this episode, Jay goes over the 8th district: the district's location, demographics, and the primary candidates.",
+        "length": "7 min",
+        "releaseDate": "May 18, 2018",
+        "sourceLinks": [
+            {
+                "linkHeadline": "New Jersey District 08 2018 Race",
+                "link": "https://www.opensecrets.org/races/summary?cycle=2018&id=NJ08"
+            },
+            {
+                "linkHeadline": "My Congressional District",
+                "link": "https://www.census.gov/mycd/?st=34&cd=08"
+            },
+            {
+                "linkHeadline": "Albio Sires",
+                "link": "https://en.wikipedia.org/wiki/Albio_Sires"
+            },
+            {
+                "linkHeadline": "Tracking Congress In The Age Of Trump",
+                "link": "https://projects.fivethirtyeight.com/congress-trump-score/albio-sires/"
+            },
+            {
+                "linkHeadline": "H.R.676 - Expanded & Improved Medicare For All Act",
+                "link": "https://www.congress.gov/bill/115th-congress/house-bill/676/cosponsors"
+            },
+            {
+                "linkHeadline": "NJ Voting Info from Stevens Institute of Technology",
+                "link": "http://researchguides.stevens.edu/vote"
+            }
+        ]
+    },
+    {
+        "episode": 15,
+        "title": "Short Drive Through District 7",
+        "soundcloudLink": "<iframe width='100%' height='166' scrolling='no' frameborder='no' allow='autoplay' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/445673823&color=%23913ee4&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true'></iframe>",
+        "description": "Over the next few weeks, the Parkway Politics crew will post short yet informative monologues on the individual districts of New Jersey. In this episode, Ron goes over the 7th district: the district's location, demographics, current representative and the primary candidate for the 2018 Congressional Election.",
+        "length": "13 min",
+        "releaseDate": "May 17, 2018",
+        "sourceLinks": [
+            {
+                "linkHeadline": "No article links for this episode",
+                "link": null
+            }
+        ]
+    },
+    {
+        "episode": 14,
+        "title": "Short Drive Through District 12",
+        "soundcloudLink": "<iframe width='100%' height='166' scrolling='no' frameborder='no' allow='autoplay' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/444115146&color=%23913ee4&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true'></iframe>",
+        "description": "Over the next few weeks, the Parkway Politics crew will post short yet informative monologues on the individual districts of New Jersey. In this episode, Brian goes over the 12th Congressional District. There truly isn't much going on in this district for the primaries on June 5th: only one primary candidate for each party, and (spoiler alert), the seat looks to be safely in the Dem incumbent's hands.",
+        "length": "5 min",
+        "releaseDate": "May 14, 2018",
+        "sourceLinks": [
+            {
+                "linkHeadline": "No article links for this episode",
+                "link": null
+            }
+        ]
+    },
+    {
+        "episode": 13,
+        "title": "Short Drive Through District 11",
+        "soundcloudLink": "<iframe width='100%' height='166' scrolling='no' frameborder='no' allow='autoplay' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/443257188&color=%23913ee4&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true'></iframe>",
+        "description": "Over the next few weeks, the Parkway Politics crew will post short yet informative monologues on the individual districts of New Jersey. In this episode, Jay goes over the 11th district: some background on the current incumbent and why this district is a battleground district in 2018, and the 10(!) total primary candidates between the two parties and where they stand on issues.",
+        "length": "14 min",
+        "releaseDate": "May 11, 2018",
+        "sourceLinks": [
+            {
+                "linkHeadline": "ELECTIONS 2016: 11TH CONGRESSIONAL DISTRICT",
+                "link": "http://www.njspotlight.com/stories/16/10/10/elections-2016-11th-congressional-district/"
+            },
+            {
+                "linkHeadline": "DeNeufville prepared to self-fund",
+                "link": "https://newjerseyglobe.com/congress/deneufville-prepared-to-self-fund/"
+            },
+            {
+                "linkHeadline": "New GOP candidate emerges for Frelinghuysen seat with Essex and Passaic support",
+                "link": "https://www.politico.com/states/new-jersey/story/2018/02/21/new-gop-candidate-emerges-for-frelinghuysen-seat-with-essex-and-passaic-support-266481"
+            },
+            {
+                "linkHeadline": "Hewitt ‘not your typical candidate' in 11th District Republican primary",
+                "link": "http://www.njherald.com/20180315/hewitt-not-your-typical-candidate-in-11th-district-republican-primary#//"
+            },
+            {
+                "linkHeadline": "GOP Assemblyman Jay Webber Will Run for Congress to Replace Rodney Frelinghuysen",
+                "link": "http://observer.com/2018/02/jay-webber-rodney-frelinghuysen-congress/"
+            }
+        ]
+    },
+    {
+        "episode": 12,
+        "title": "Short Drive Through District 10",
+        "soundcloudLink": "<iframe width='100%' height='166' scrolling='no' frameborder='no' allow='autoplay' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/442412742&color=%23913ee4&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true'></iframe>",
+        "description": "Over the next few weeks, the Parkway Politics crew will post short, yet informative monologues on the individual districts of New Jersey. In this episode, Ron briefly talks about the 10th district's political landscape and how it's looking for November.",
+        "length": "8 min",
+        "releaseDate": "May 10, 2018",
+        "sourceLinks": [
+            {
+                "linkHeadline": "New Jersey's 10th Congressional District election, 2018",
+                "link": "https://ballotpedia.org/New_Jersey%27s_10th_Congressional_District_election,_2018"
+            },
+            {
+                "linkHeadline": "Trumpcare, but at What Cost?",
+                "link": "https://www.youtube.com/watch?v=8KyKs8sNko4"
+            },
+            {
+                "linkHeadline": "Congressman Payne, Jr. on the elimination of the DACA program",
+                "link": "https://www.youtube.com/watch?v=BaXPcXtQXg8"
+            },
+            {
+                "linkHeadline": "House Race Ratings",
+                "link": "http://cookpolitical.com/index.php/house-maps-0"
+            }
+        ]
+    },
+    {
         "episode": 11,
         "title": "A Deep Drive into the Parkway State's Pension Crisis",
         "soundcloudLink": "<iframe width='100%' height='166' scrolling='no' frameborder='no' allow='autoplay' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/438835080&color=%23913ee4&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false'></iframe>",
@@ -476,6 +594,11 @@
         "description": "Hosts Ron and Jay discuss their upcoming podcast.",
         "length": "3 min",
         "releaseDate": "January 11, 2018",
-        "sourceLinks": null
+        "sourceLinks": [
+            {
+                "linkHeadline": "No article links for this episode",
+                "link": null
+            }
+        ]
     }
 ]
