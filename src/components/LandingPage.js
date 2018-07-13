@@ -54,7 +54,7 @@ export default class LandingPage extends Component {
 									<h3>Latest episode</h3>
 								</div>
 								<div id="soundcloud-embed">
-									<iframe width="90%" height="100%" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/446068812&color=%23913ee4&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+									<iframe width="90%" height="100%" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/462138510&color=%23913ee4&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
 								</div>
 								<div>
 									<Link to="/episodes"><button type="button">Previous episodes</button></Link>

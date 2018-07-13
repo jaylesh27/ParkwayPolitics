@@ -1,5 +1,41 @@
 [
     {
+        "episode": 18,
+        "title": "Return of the Podcasters",
+        "soundcloudLink": "<iframe width='100%' height='166' scrolling='no' frameborder='no' allow='autoplay' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/462138510&color=%23913ee4&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true'></iframe>",
+        "description": "Hello fellow denizens of NJ, we've returned after our hiatus. We were stuck on the Garden State Parkway for the last few weeks. Anyway, we're off that god-forsaken highway and back to podcasting! We have updates on some oldies but some goodies: NJ's upcoming budget showdown between Murphy and Sweeney/Legislature, marijuana legalization but we start off the show with talking about the primary elections from early June.",
+        "length": "48 min",
+        "releaseDate": "June 21, 2018",
+        "sourceLinks": [
+            {
+                "linkHeadline": "No article links for this episode",
+                "link": null
+            }
+        ]
+    },
+    {
+        "episode": 17,
+        "title": "Short Drive Through District 9",
+        "soundcloudLink": "<iframe width='100%' height='166' scrolling='no' frameborder='no' allow='autoplay' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/447710538&color=%23913ee4&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true'></iframe>",
+        "description": "Over the next few weeks, the Parkway Politics crew will post short yet informative monologues on the individual districts of New Jersey. In this episode, Brian goes over the 9th district: the district's location, demographics, current representative and the primary candidates, or lack thereof, for the 2018 Congressional Election.",
+        "length": "4 min",
+        "releaseDate": "May 22, 2018",
+        "sourceLinks": [
+            {
+                "linkHeadline": "New Jersey's 9th Congressional District",
+                "link": "https://ballotpedia.org/New_Jersey%27s_9th_Congressional_District#cite_note-UnofficialList-3"
+            },
+            {
+                "linkHeadline": "Rep. Bill Pascrell Jr. - New Jersey District 09",
+                "link": "https://www.opensecrets.org/members-of-congress/industries?cid=N00000751&cycle=2018"
+            },
+            {
+                "linkHeadline": "Social Security 2100 Act a commonsense approach to achieve solvency, pay adequate benefits",
+                "link": "http://thehill.com/blogs/congress-blog/economy-budget/328516-social-security-2100-act-a-commonsense-approach-to-achieve"
+            }
+        ]
+    },
+    {
         "episode": 16,
         "title": "Short Drive Through District 8",
         "soundcloudLink": "<iframe width='100%' height='166' scrolling='no' frameborder='no' allow='autoplay' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/446068812&color=%23913ee4&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true'></iframe>",
