@@ -44,8 +44,8 @@ app.get("/", function(req, res) {
 
 app.get('/api/fetch-nj-news', function(req, res) {
 
-	request('http://www.nj.com/politics', function(error, response, html) {
-
+	request('https://www.nj.com/politics', function(error, response, html) {
+	console.log("fetch news error: "+error);
 		var $ = cheerio.load(html);
 		var results = [];
 
