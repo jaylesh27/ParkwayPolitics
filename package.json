@@ -2,6 +2,9 @@
   "name": "ParkwayPolitics",
   "version": "1.0.0",
   "description": "Website for Parkway Politics podcast.",
+  "engines": {
+    "node": "10.13.0"
+  },
   "main": "index.js",
   "scripts": {
     "clean": "rimraf build",
