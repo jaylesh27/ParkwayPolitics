@@ -11,7 +11,7 @@ var podcastData = require('./episodes.json');
 
 const app = express();
 
-// process.env.NODE_ENV = 'production';
+process.env.NODE_ENV = 'production';
 
 if (process.env.NODE_ENV !== "production") {
 	const webpackMiddleware = require("webpack-dev-middleware");
